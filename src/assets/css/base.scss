@@ -1,0 +1,286 @@
+/*!
+ *
+ * spm-admin
+ *
+ * base.scss
+ *
+ * 全局公用样式
+ *
+ */
+
+@import "variables";/*引入配置*/
+/*大标题*/
+.font-h1{
+  color: $font-color-1;
+  font-size: $font-size-1;
+  line-height: $line-height-1;
+  font-weight: $font-weight-2;
+}
+/*标题*/
+.font-h2{
+  color: $font-color-1;
+  font-size: $font-size-2;
+  line-height: $line-height-2;
+  font-weight: $font-weight-2;
+}
+/*副标题*/
+.font-h3{
+  color: $font-color-2;
+  font-size: $font-size-2;
+  line-height: $line-height-2;
+  font-weight: $font-weight-2;
+}
+/*正文*/
+.font-p-1{
+  color: $font-color-1;
+  font-size: $font-size-2;
+  line-height: $line-height-2;
+  font-weight: $font-weight-1;
+}
+/*辅助文本*/
+.font-p-2{
+  color: $font-color-3;
+  font-size: $font-size-3;
+  line-height: $line-height-3;
+  font-weight: $font-weight-1;
+}
+/*边框*/
+.border{
+  border: 1px solid $border-color-1;
+}
+
+.default-color{
+  color: $default-color;
+}
+.warning-color{
+  color: $warning-color;
+}
+.success-color{
+  color: $success-color;
+}
+.danger-color{
+  color: $danger-color;
+}
+
+.default-bg-color{
+  background: $default-color;
+}
+.warning-bg-color{
+  background: $warning-color;
+}
+.success-bg-color{
+  background: $success-color;
+}
+.danger-bg-color{
+  background: $danger-color;
+}
+.m-20{
+  margin: 20px;
+}
+.m-l-20{
+  margin-left: 20px;
+}
+.m-r-20{
+  margin-right: 20px;
+}
+.m-t-20{
+  margin-top: 20px;
+}
+.m-b-20{
+  margin-bottom: 20px;
+}
+
+.m-20{
+  margin: 20px;
+}
+.m-l-10{
+  margin-left: 10px;
+}
+.m-r-20{
+  margin-right: 20px;
+}
+.m-t-20{
+  margin-top: 20px;
+}
+.m-b-10{
+  margin-bottom: 10px;
+}
+
+.p-20{
+  padding: 20px;
+}
+.p-l-20{
+  padding-left: 20px;
+}
+.p-r-20{
+  padding-right: 20px;
+}
+.p-t-20{
+  padding-top: 20px;
+}
+.p-b-20{
+  padding-bottom: 20px;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  /* 内敛元素 */
+  display: inline-flex;
+}
+
+.flex-item {
+  flex: 1;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+/* 容器上 start*/
+
+.direction-row {
+  /* (默认)主轴为水平方向，起点在左端 */
+  flex-direction: row;
+}
+
+.direction-row-reverse {
+  /* 主轴为水平方向，起点在右端 */
+  flex-direction: row-reverse;
+}
+
+.direction-column {
+  /* 主轴为垂直方向，起点在上沿 */
+  flex-direction: column;
+}
+
+.direction-column-reverse {
+  /* 主轴为垂直方向，起点在下沿。*/
+  flex-direction: column-reverse;
+}
+
+.flex-nowrap {
+  /* flex不换行 */
+  flex-wrap: nowrap;
+}
+
+.flex-wrap {
+  /* flex第一行在上方 */
+  flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  /* flex第一行在下方 */
+  flex-wrap: wrap-reverse;
+}
+
+/* justify 横向对齐方式 */
+
+.justify-start {
+  /* 左对齐 */
+  justify-content: flex-start;
+}
+
+.justify-end {
+  /* 右对齐 */
+  justify-content: flex-end;
+}
+
+.justify-center {
+  /* 居中 */
+  justify-content: center;
+}
+
+.justify-between {
+  /* 等宽排列 */
+  justify-content: space-between;
+}
+.ai-between{
+  align-content:space-between;
+}
+.justify-around {
+  /*  分散排列*/
+  justify-content: space-around;
+}
+
+//所有
+
+/* align 上下对齐方式 */
+
+.align-start {
+  /* 上对齐 */
+  align-items: flex-start;
+}
+
+.align-end {
+  /* 下对齐 */
+  align-items: flex-end;
+}
+
+.align-center {
+  /* 上下居中 */
+  align-items: center;
+}
+
+.align-baseline {
+  /* 第一行文字的基线对齐 */
+  align-items: baseline;
+}
+
+.align-stretch {
+  /* 如果未设置高度或设为auto，将占满整个容器的高度。 */
+  align-items: stretch;
+}
+
+//本身
+
+.align-self-auto {
+  /* 继承父元素排列方式 */
+  align-self: auto;
+}
+
+.align-self-start {
+  /* 上对齐 */
+  align-self: flex-start;
+}
+
+.align-self-end {
+  /* 下对齐 */
+  align-self: flex-end;
+}
+
+.align-self-center {
+  /* 上下居中 */
+  align-self: center;
+}
+
+.align-self-baseline {
+  /* 第一行文字的基线对齐 */
+  align-self: baseline;
+}
+
+.align-self-stretch {
+  /* 如果未设置高度或设为auto，将占满整个容器的高度。 */
+  align-self: stretch;
+}
+
+:global(.ant-btn) {
+}
+.pointer{
+  cursor: po;
+}
