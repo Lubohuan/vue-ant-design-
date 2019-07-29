@@ -1,7 +1,7 @@
 {
-  "name": "spm-admin",
+  "name": "spm-operation-admin",
   "version": "1.0.0",
-  "description": "new project of spm",
+  "description": "spm运营后台管理系统",
   "author": "lichenguang",
   "private": true,
   "scripts": {

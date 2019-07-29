@@ -12,6 +12,9 @@ import Common from '#/assets/js/common'
 // 引入ant-design-vue
 import Antd from 'ant-design-vue'
 import './assets/css/antd.css'
+import moment from 'moment';
+import 'moment/locale/zh-cn';
+moment.locale('zh-cn');
 Vue.use(Antd)
 
 // 自定义 font 图标

@@ -32,7 +32,6 @@ const updateTheme = primaryColor => {
     if (!window.less) {
       return
     }
-    console.log(Vue)
     // Vue.$loading.show('loading')
     setTimeout(() => {
       console.log(window.less)
